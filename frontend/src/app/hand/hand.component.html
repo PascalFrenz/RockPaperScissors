@@ -1,0 +1,7 @@
+<button class="p-4 border-4 border-gray-100 rounded-full text-6xl"
+        [class.hover:border-gray-300]="!isStatic"
+        [class.hover:cursor-default]="isStatic"
+        [class.border-gray-100]="!wasChosen"
+        [class.border-amber-600]="wasChosen">
+  <ng-content></ng-content>
+</button>
